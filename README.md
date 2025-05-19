@@ -1,2 +1,5 @@
-# Bayesian-ML-Football-Oracle
-Machine learning models for predicting football match outcomes, goals, and key performance indicators using historical data from European leagues (2008–2016).
+# Live-Style Soccer Commentary with Open-Source LLMs
+Authors: Arpan Pradhan, Matthew Schaefer, Shane KimDate: 2025-05-19
+
+1. Project Overview
+
