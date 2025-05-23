@@ -105,8 +105,56 @@ Real-Time Potential: Can be embedded into live dashboards
 
 Personalization: Tailor commentary based on team or fan profile
 
- 
-   
+
+**7. Related Use Cases in Sports**
+
+Basketball and cricket commentary generation
+
+Tactical insight summaries for coaches
+
+Match narration for accessibility tools (e.g., for visually impaired fans)
+
+Beyond Sports
+
+Financial News Narratives: Real-time market summaries from structured trading data
+
+Healthcare Monitoring: Patient report generation from clinical event streams
+
+E-commerce: Product update summaries from inventory events
+
+
+**8. Limitations and Challanges**
+
+Hallucinations: Models sometimes generate incorrect or implausible actions
+
+Latency: Real-time generation needs fast inference (under 2s window)
+
+Data Noise: Match event data lacks rich descriptions (e.g., ball movement direction)
+
+
+
+**9. Conclusions & Future Work**
+    
+Fine-tuned open LLMs can effectively simulate broadcast-style soccer commentary
+
+Prompt engineering is competitive with fine-tuning in smaller setups
+
+Human-AI hybrid workflows (AI draft + human edit) show promise
+
+Next Steps:
+
+Integrate speaker-style transfer (e.g., mimic commentators like Peter Drury)
+
+Use multi-modal input (text + images/heatmaps)
+
+Evaluate in live setting with simulated match feeds
+
+Deploy in a web app dashboard with real-time updates
+
+
+
+
+
 
 
 
