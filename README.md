@@ -108,7 +108,10 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ### Sample Output
 
-![Match Commentary Flowchart]([WhatsApp Image 2025-05-24 at 2.50.43 PM.jpeg](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/ccf46dd8ca669af9c0d0f81fa5103dcf17731c06/Output.jpeg?raw=true))
+## Match Commentary Pipeline
+
+![Match Commentary Flowchart](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/ccf46dd8ca669af9c0d0f81fa5103dcf17731c06/Output.jpeg?raw=true)
+
 
 
 
