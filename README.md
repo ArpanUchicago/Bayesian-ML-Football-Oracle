@@ -74,13 +74,27 @@ European Soccer Database (Kaggle):
 
 ### 4.2 Processed Data Format
 
-Each match was processed into rolling 60-second windows with actions encoded in the format:
+Source: Extracted directly from the match event JSON file provided by StatsBomb.
 
-| Minute | Action | Player | Target | Outcome |
-| ------ | ------ | ------ | ------ | ------- |
-| 15     | Pass   | X      | Y      | Success |
-| 16     | Shot   | Y      | Goal   | Yes     |
-| ...    | ...    | ...    | ...    | ...     |
+Each record contains:
+
+Minute: When the event occurred
+
+Event Type: Action taken (e.g., pass, shot)
+
+Player & Team: Who performed the action
+
+Details: Contextual metadata parsed from sub-objects (pass, shot, foul_committed, etc.)
+
+This format feeds into the LLM prompt generator and enables highly contextual, realistic commentary output.
+
+| Minute | Event Type   | Player             | Team             | Details                                      |
+| ------ | ------------ | ------------------ | ---------------- | -------------------------------------------- |
+| 0      | Pass         | Jonathan Rodríguez | Deportivo Alavés | To Guillermo Maripán, Kick-Off, 29.8m ground |
+| 12     | Shot         | Luis Suárez        | Barcelona        | Goal, Right Foot, xG: 0.34, inside box       |
+| 24     | Foul         | Wakaso             | Deportivo Alavés | Yellow card, late sliding tackle             |
+| 33     | Interception | Jordi Alba         | Barcelona        | Cuts out pass in midfield                    |
+
 
 ---
 
