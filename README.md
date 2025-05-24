@@ -96,7 +96,36 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 | 33     | Interception | Jordi Alba         | Barcelona        | Cuts out pass in midfield                    |
 
 
----
+### Model & Prompting Strategy
+
+
+
+
+
+
+
+
+
+### Sample Output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 5. Evaluation
 
