@@ -108,6 +108,8 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ### Sample Output
 
+![Match Commentary Flowchart](WhatsApp Image 2025-05-24 at 2.50.43 PM.jpeg)
+
 
 
 
