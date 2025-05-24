@@ -16,7 +16,7 @@
 
 Traditional sports commentary is either manually delivered by professionals or generated through rigid rule-based systems. These approaches often lack flexibility, contextual nuance, and real-time adaptability. In contrast, recent advances in large language models (LLMs) have enabled more dynamic generation of coherent, engaging narratives based on structured data inputs.
 
-This project explores the application of open-source LLMs to generate **live-style, play-by-play soccer commentary** using structured match event data (passes, shots, tackles, etc.). We investigate the capabilities of LLMs like **Mistral-7B**, **GPT-J**, and **LLaMA 2**, combined with retrieval-based summarization and fine-tuning techniques, to mimic the tone and pacing of real-time human commentators.
+This project explores the application of open-source LLMs to generate **live-style, play-by-play soccer commentary** using structured match event data (passes, shots, tackles, etc.). We investigate the capabilities of LLMs like **Mistral-7B**, **GPT-J**, **Phi-4** and **LLaMA 2**, combined with retrieval-based summarization and fine-tuning techniques, to mimic the tone and pacing of real-time human commentators.
 
 ---
 
@@ -54,6 +54,7 @@ To generate real-time, natural-language soccer commentary from structured match 
 
 * **Mistral-7B (base and LoRA-tuned)**
 * **GPT-J (6B)**
+* **Phi-4**
 * **LLaMA 2 (7B, 13B)**
 
 All models were tested with prompt engineering and LoRA fine-tuning for domain adaptation.
