@@ -113,7 +113,7 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 ![Match Commentary Flowchart](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/ccf46dd8ca669af9c0d0f81fa5103dcf17731c06/Output.jpeg?raw=true)
 
 ### meta-llama/Llama-2-7b-chat-hf
-
+![Match Commentary Flowchart](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/0ae18176bc8684772c19271ca959cea876e3a092/llmchatgpt.png?raw=true)
 
 
 
