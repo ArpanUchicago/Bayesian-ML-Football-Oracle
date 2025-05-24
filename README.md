@@ -100,17 +100,33 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ## 5. Evaluation
 
-### 5.1 Quantitative Metrics
+### 6.0 Evaluation
 
-* **BLEU & ROUGE:** Compare generated commentary against ground truth post-match reports
-* **Perplexity:** Measure fluency and grammar quality
-* **Comment Quality Rating (CQR):** Human reviewers rate clarity, emotion, and engagement (1–5 scale)
+The generated commentary was evaluated using both qualitative and manual human judgment techniques.
 
-### 5.2 Qualitative Feedback
+#### 🔍 Evaluation Criteria:
+- **Relevance**: Commentary correctly reflects the player and event described
+- **Realism**: Output sounds like professional sports broadcasting
+- **Emotion**: Goal commentary is vivid, crowd-driven, and appropriately high-energy
+- **Brevity**: 2–3 sentence limit maintained without sacrificing information
 
-* Real-time generated commentaries were reviewed by soccer fans
-* Scores collected for excitement, realism, and insightfulness
-* Most engaging commentaries came from **RAG + Prompt Ensemble** setup
+#### 🧠 Methods Used:
+- **Prompt spot-checking**: We printed and reviewed model prompts and outputs for 50+ diverse events (pass, goal, foul, interception)
+  
+- **Failure analysis**: We logged cases where the model hallucinated players, repeated content, or ignored focus instructions
+
+#### 📊 Observations:
+- The model produced highly realistic commentary for **goals and shots**
+- **Pass and foul events** were often well-executed when player focus was emphasized
+- **Bias toward Messi** was observed when not explicitly overridden in the prompt
+- Commentary length was mostly within range, though longer completions sometimes occurred
+- Crowd reactions improved noticeably when explicitly instructed
+
+#### 🔧 Limitations:
+- Lacks full tactical awareness (e.g., game flow, substitutions)
+- Not robust to low-detail events (e.g., simple ball recoveries)
+- Not yet benchmarked with BLEU/ROUGE due to lack of labeled reference commentary
+
 
 ---
 
