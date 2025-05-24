@@ -1,1 +1,25 @@
+🔮 Future Improvements
+While the current system generates vivid, accurate match commentary, several improvements are planned:
+
+🧠 1. Fine-Tuning on Sports Language
+Train or adapt the model on real-world football commentary transcripts (e.g., FIFA match reports, BBC live text) to improve tone and pacing.
+
+🗣️ 2. Text-to-Speech Integration
+Convert generated commentary into spoken audio using models like pyttsx3, gTTS, or Bark for a full broadcast simulation.
+
+🎬 3. Match Timeline Playback
+Build a visual timeline interface showing commentary alongside minute-by-minute event playback.
+
+🧩 4. Multilingual Commentary
+Extend support for Spanish, French, or Arabic commentary generation based on the same match data.
+
+🎛️ 5. Interactive Prompt Tuning UI
+Let users tweak commentary tone, formality, or emotion through a Streamlit interface before generating.
+
+🧪 6. Automated Evaluation
+Introduce BLEU, METEOR, or GPT-4 judgment-based scoring to measure fluency, factuality, and excitement.
+
+📊 7. Real-Time API Mode
+Turn the pipeline into a microservice that can receive live event streams and produce commentary in real time.
+
 
