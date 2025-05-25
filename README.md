@@ -28,11 +28,37 @@ This project explores the application of open-source LLMs to generate **live-sty
 
 ---
 
-## 2. Project Summary
+## 2. Project Overview
 
-### 2.1 Objective
+Live-Style Soccer Commentary LLM generates near-real-time, human-like match commentary based on structured event feeds (passes, shots, fouls, goals, etc.).
 
-To generate real-time, natural-language soccer commentary from structured match event data using open-source LLMs, enhancing fan engagement and accessibility of sports data.
+Goals:
+
+Demonstrate how parameter-efficient fine-tuning (LoRA/QLoRA) can produce engaging commentary on commodity hardware.
+
+Provide a template for small clubs or fan-driven applications to deploy AI commentators.
+
+Features
+
+Parses raw event data from CSV/JSON feeds
+
+Applies custom prompt templates to steer LLM output
+
+Supports multiple fine-tuning strategies: Layered, Mixed Sequentially, Mixed Immediately
+
+Evaluation scripts for automatic (ROUGE, BLEU) and human evaluations
+
+Getting Started
+
+Prerequisites
+
+Python 3.9+
+
+Git
+
+A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smaller models
+
+
 
 ### 2.2 Approach Overview
 
@@ -73,7 +99,7 @@ All models were tested with prompt engineering and LoRA fine-tuning for domain a
 
 ### 4.1 Source
 
-European Soccer Database (Kaggle):
+Statsbomb Open Data (https://github.com/statsbomb/open-data)
 
 * Covers 11 countries
 * Seasons: 2008–2016
