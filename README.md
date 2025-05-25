@@ -2,7 +2,19 @@
 ![Match LLM](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/0ae18176bc8684772c19271ca959cea876e3a092/llmchatgpt.png?raw=true)
 
 
-![Match Stadium] (https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/7e8bb8475be1ea2f545601a9f8de083ba8adfb1f/Stadium.webp?raw=true)
+
+
+
+
+
+
+
+
+
+
+
+
+![Match Stadium](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/7e8bb8475be1ea2f545601a9f8de083ba8adfb1f/Stadium.webp?raw=true)
 
 
 
