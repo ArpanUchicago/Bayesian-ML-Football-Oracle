@@ -24,7 +24,9 @@
 
 
 **University of Chicago – MS in Applied Data Science**
+
 **Course:** Large Language Models and Generative AI Applications
+
 **Date:** 05/23/2025
 
 ### Contributors:
