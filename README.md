@@ -64,11 +64,11 @@ A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smal
 
 * **Input:** Structured soccer event data (e.g., player actions, match time, outcomes) from the European Soccer Database.
 * **Processing:** Event sequences are chunked into short temporal windows, enriched with player/team context.
-* **Modeling:** Three modeling strategies are explored:
+* **Modeling:** Two modeling strategies are explored:
 
   * **Prompt Engineering** with in-context examples
   * **Fine-Tuning** using LoRA on pre-trained LLMs
-  * **Retrieval-Augmented Generation (RAG)** using news headlines or historical events
+
 * **Output:** Natural language commentary resembling broadcast-style narration.
 
 ---
@@ -241,7 +241,7 @@ The generated commentary was evaluated using both qualitative and manual human j
 
 **Next Steps:**
 
-* Integrate **speaker-style transfer** (e.g., mimic commentators like Peter Drury)
+* Integrate **speaker-style transfer** using **Retrieval-Augmented Generation (RAG)** (e.g. mimic Peter Drury)
 * Use multi-modal input (text + images/heatmaps)
 * Evaluate in live setting with simulated match feeds
 * Deploy in a web app dashboard with real-time updates
