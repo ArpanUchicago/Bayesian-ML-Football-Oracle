@@ -10,7 +10,7 @@ delay = st.sidebar.slider("Delay (sec)", 1, 10, 5)
 placeholder = st.empty()
 
 # Load your comments
-with open('/Users/arpanpradhan/Downloads/commentary.txt', 'r', encoding='utf-8') as f:
+with open('commentary.txt', 'r', encoding='utf-8') as f:
     comments = [l.strip() for l in f if l.strip()]
 
 if st.button("Start"):
