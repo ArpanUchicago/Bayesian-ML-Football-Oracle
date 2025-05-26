@@ -179,6 +179,16 @@ Below is a summary of the key differences:
 | **Stylistic Flair**         | Flowery metaphors (“thunders a thunderbolt,” “bone-crunching challenge”).                         | Controlled dramatic flourishes reserved for standout moments (“POST!,” “TEXTBOOK!”).        |
 | **Overall Flow**            | Feels like an eager writer looping back on the same action.                                       | Feels like a professional play-by-play feed—steady beat, clear signposts, and high energy.   |
 
+| Aspect                  | Base Phi-4                                                                                   | LoRA-Tuned Phi-4                                                                                          |
+|-------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Tone & Emphasis**     | Rich narrative prose with few one-word exclamations.                                         | Frequent uppercase, single-word interjections (e.g., **“BRILLIANT!”**, **“INCREDIBLE!”**) for high impact.|
+| **Sentence Structure**  | Highly variable syntax—sometimes long multi-sentence segments, sometimes short.              | Consistent rapid-fire template per event: `[Minute] <Action> by <Player>! <INTERJECTION>! <Descriptor>`   |
+| **Conciseness & Pacing**| ~24 words per segment on average; multiple overlapping lines per event can slow the flow.    | ~15 words per segment; each event described once, yielding snappier live pacing.                          |
+| **Redundancy**          | Repeats similar descriptions of the same play multiple times.                                | Bundles each event into a single line, eliminating near-duplicates.                                       |
+| **Stylistic Flair**     | Flowery metaphors (“thunders a thunderbolt,” “bone-crunching challenge”).                    | Controlled dramatic flourishes reserved for standout moments (“POST!,” “TEXTBOOK!”).                     |
+| **Overall Flow**        | Feels like an eager writer looping back on the same action.                                  | Feels like a professional play-by-play feed—steady beat, clear signposts, and high energy.                |
+
+
 ### Takeaways & Recommendations
 
 - **Sharper Delivery**: LoRA fine-tuning streamlines verbosity and standardizes structure for a true live-broadcast feel.  
