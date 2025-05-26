@@ -105,7 +105,7 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ## 4. Model Architecture
 
-### 4.1 Event Importance
+### 4.1 Prioritizing Key Moments
 * Events are weighted based on their significance to match flow and commentary value:
 
 <img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Event%20weights.png?raw=true" alt="Event weights" width="600"/>
@@ -115,12 +115,12 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 <img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png?raw=true" alt="Time & context modifiers" width="500"/>
 
-### 4.3 Event Classification System
+### 4.3 Event Classification 
 * Events are further categorized by position and type:
 
 <img src="./Event%20subtype.png" alt="Event subtype" width="600"/>
 
-### 4.4 Goal Classification System
+### 4.4 Goal Classification 
 * Goals are also categorized by position and type:
 
 <img src="./Goal%20subtype.png" alt="Goal subtype" width="600"/>
