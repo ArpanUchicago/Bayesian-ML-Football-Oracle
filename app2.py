@@ -10,7 +10,7 @@ delay = st.sidebar.slider("Delay (sec)", 1, 10, 5)
 placeholder = st.empty()
 
 # Load your comments
-with open('Phi-4 LoRa_commentary.txt.txt', 'r', encoding='utf-8') as f:
+with open('Phi-4 LoRa_commentary.txt', 'r', encoding='utf-8') as f:
     comments = [l.strip() for l in f if l.strip()]
 
 if st.button("Start"):
