@@ -105,31 +105,22 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ## 4. Model Architecture
 
-### 4.1 Commentary Generation Pipeline
-
-1. **Input Feature Extraction:** Time-ordered events per match (passes, goals, fouls, substitutions)
-2. **Context Construction:** Include player stats, match importance, recent plays, and team form
-3. **Prompt Formulation / Finetuned Input:** Format prompts like:
-   *"45’ — Player X passes the ball to Player Y near the penalty box..."*
-4. **LLM Output:**
-   *“A slick one-two between Player X and Y slices through the defense—this is high-quality football!”*
-
-**Weighing Event Importance**
+### 4.1 Weighing Event Importance
 * Events are weighted based on their significance to match flow and commentary value:
 
 ![Event weights](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Event%20weights.png)
 
-**Dynamic Context Adjustments**
+### 4.2 Dynamic Context Adjustments
 * Our commentary adapts based on match time and situational context:
 
 ![Time & context based modifiers](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png)
 
-**Goal Classification System**
+### 4.3 Goal Classification System
 * Goals are further categorized by position and type to generate more specific and accurate commentary:
 
 ![Goal subtype](./Goal%20subtype.png)
 
-### 4.2 Models Explored
+### 4.4 Models Explored
 
 * **Mistral-7B (base and LoRA-tuned)**
 * **GPT-J (6B)**
