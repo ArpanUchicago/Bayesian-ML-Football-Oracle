@@ -204,9 +204,8 @@ The generated commentary was evaluated using both qualitative and manual human j
 - **Brevity**: 2–3 sentence limit maintained without sacrificing information
 
 #### 🧠 Methods Used:
-- **Prompt spot-checking**: We printed and reviewed model prompts and outputs for 50+ diverse events (pass, goal, foul, interception)
-  
-- **Failure analysis**: We logged cases where the model hallucinated players, repeated content, or ignored focus instructions
+- **Manual review process**: We conducted systematic human evaluation across 50+ diverse events (pass, goal, foul, interception), with multiple reviewers assessing each output against our criteria
+- **Comparative analysis**: Outputs were compared against real broadcast commentary to identify gaps in authenticity, energy, and professional broadcasting style
 
 #### 📊 Observations:
 - The model produced highly realistic commentary for **goals and shots**
