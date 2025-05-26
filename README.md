@@ -20,7 +20,7 @@
 ## 1. Introduction
 
 
-![Match LLM](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/0ae18176bc8684772c19271ca959cea876e3a092/llmchatgpt.png?raw=true)
+![Match LLM](raw=true)
 
 Traditional sports commentary is either manually delivered by professionals or generated through rigid rule-based systems. These approaches often lack flexibility, contextual nuance, and real-time adaptability. In contrast, recent advances in large language models (LLMs) have enabled more dynamic generation of coherent, engaging narratives based on structured data inputs.
 
