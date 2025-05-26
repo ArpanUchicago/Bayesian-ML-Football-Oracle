@@ -1,7 +1,7 @@
 # Live-Style Soccer Commentary Using Open-Source LLMs
 
 ![Match Stadium](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/7e8bb8475be1ea2f545601a9f8de083ba8adfb1f/Stadium.webp?raw=true)
-
+Image : Medium blog
 
 **University of Chicago – MS in Applied Data Science**
 
