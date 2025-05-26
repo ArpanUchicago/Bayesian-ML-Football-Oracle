@@ -153,14 +153,21 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 
 
+## Live Demo
+
+Experience the live commentary simulator in action:
+
+[![Streamlit Status](https://share.streamlit.io/ArpanUchicago/Bayesian-ML-Football-Oracle/main/badge.svg)](https://bayesian-ml-football-oracle-commentarysimulator.streamlit.app/)
+
+👉 **Try it now:**  
+https://bayesian-ml-football-oracle-commentarysimulator.streamlit.app/
 
 
 
-### Sample Output
 
-## Match Commentary Pipeline
 
-![Match Commentary Flowchart](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/ccf46dd8ca669af9c0d0f81fa5103dcf17731c06/Output.jpeg?raw=true)
+
+
 
 ### meta-llama/Llama-2-7b-chat-hf
 
