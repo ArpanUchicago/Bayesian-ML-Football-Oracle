@@ -120,12 +120,12 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 <img src="./Event%20subtype.png" alt="Event subtype" width="600"/>
 
-### 4.3 Goal Classification System
+### 4.4 Goal Classification System
 * Goals are also categorized by position and type:
 
 <img src="./Goal%20subtype.png" alt="Goal subtype" width="600"/>
 
-### 4.4 Models Explored
+### 4.5 Models Explored
 
 * **Phi-4 (base and LoRA-tuned)**
 * **Mistral-7B**
