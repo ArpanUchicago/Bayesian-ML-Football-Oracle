@@ -108,22 +108,22 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 ### 4.1 Weighing Event Importance
 * Events are weighted based on their significance to match flow and commentary value:
 
-<img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Event%20weights.png?raw=true" alt="Event weights" width="500"/>
+<img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Event%20weights.png?raw=true" alt="Event weights" width="600"/>
 
 ### 4.2 Dynamic Context Adjustments
 * Our commentary adapts based on match time and situational context:
 
-<img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png?raw=true" alt="Time & context modifiers" width="500"/>
+<img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png?raw=true" alt="Time & context modifiers" width="600"/>
 
 ### 4.3 Event Classification System
 * Events are further categorized by position and type:
 
-<img src="./Event%20subtype.png" alt="Event subtype" width="500"/>
+<img src="./Event%20subtype.png" alt="Event subtype" width="600"/>
 
 ### 4.3 Goal Classification System
 * Goals are also categorized by position and type:
 
-<img src="./Goal%20subtype.png" alt="Goal subtype" width="500"/>
+<img src="./Goal%20subtype.png" alt="Goal subtype" width="600"/>
 
 ### 4.4 Models Explored
 
