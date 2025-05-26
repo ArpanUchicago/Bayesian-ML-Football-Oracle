@@ -33,31 +33,22 @@ This project explores the application of open-source LLMs to generate **live-sty
 
 Live-Style Soccer Commentary LLM generates near-real-time, human-like match commentary based on structured event feeds (passes, shots, fouls, goals, etc.).
 
-Goals:
+**Goals**:
 
-Demonstrate how parameter-efficient fine-tuning (LoRA/QLoRA) can produce engaging commentary on commodity hardware.
+* Demonstrate how parameter-efficient fine-tuning (LoRA/QLoRA) can produce engaging commentary on commodity hardware.
+* Provide a template for small clubs or fan-driven applications to deploy AI commentators.
 
-Provide a template for small clubs or fan-driven applications to deploy AI commentators.
+**Features**:
 
-Features
+* Parses raw event data from CSV/JSON feeds
+* Applies custom prompt templates to steer LLM output
+* Supports LoRa fine-tuning
 
-Parses raw event data from CSV/JSON feeds
+**Prerequisites**:
 
-Applies custom prompt templates to steer LLM output
-
-Supports multiple fine-tuning strategies: Layered, Mixed Sequentially, Mixed Immediately
-
-Evaluation scripts for automatic (ROUGE, BLEU) and human evaluations
-
-Getting Started
-
-Prerequisites
-
-Python 3.9+
-
-Git
-
-A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smaller models
+* Python 3.9+
+* Git
+* A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smaller models
 
 
 
@@ -74,9 +65,45 @@ A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smal
 
 ---
 
-## 3. Model Architecture
+## 3. Dataset
 
-### 3.1 Commentary Generation Pipeline
+### 3.1 Source
+
+Statsbomb Open Data (https://github.com/statsbomb/open-data)
+
+* Covers 11 countries
+* Seasons: 2008–2016
+* Includes match results, player stats, and play-by-play events
+* Key tables used: `match`, `player_attributes`, `event_stream` (custom parsed)
+
+### 3.2 Processed Data Format
+
+Source: Extracted directly from the match event JSON file provided by StatsBomb.
+
+Each record contains:
+
+Minute: When the event occurred
+
+Event Type: Action taken (e.g., pass, shot)
+
+Player & Team: Who performed the action
+
+Details: Contextual metadata parsed from sub-objects (pass, shot, foul_committed, etc.)
+
+This format feeds into the LLM prompt generator and enables highly contextual, realistic commentary output.
+
+| Minute | Event Type | Player         | Team          | Details                                                                         |
+| ------ | ---------- | -------------- | ------------- | ------------------------------------------------------------------------------- |
+| 5      | Pass       | Joshua Kimmich | Bayern Munich | Picked out Thomas Müller’s run with a lofted ball behind defense.               |
+| 17     | Shot       | Kai Havertz    | Chelsea       | Unleashed a curling effort from 20 yards that rifled just past the near post.   |
+| 46     | Tackle     | N’Golo Kanté   | Chelsea       | Made a vital sliding interception to halt Bayern’s early second-half surge.     |
+| 78     | Cross      | Leroy Sané     | Bayern Munich | Whipped in an inviting cross from the right flank, met by Lewandowski’s header. |
+
+---
+
+## 4. Model Architecture
+
+### 4.1 Commentary Generation Pipeline
 
 1. **Input Feature Extraction:** Time-ordered events per match (passes, goals, fouls, substitutions)
 2. **Context Construction:** Include player stats, match importance, recent plays, and team form
@@ -100,7 +127,7 @@ A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smal
 
 ![Goal subtype](./Goal%20subtype.png)
 
-### 3.2 Models Explored
+### 4.2 Models Explored
 
 * **Mistral-7B (base and LoRA-tuned)**
 * **GPT-J (6B)**
@@ -111,49 +138,6 @@ All models were tested with prompt engineering and LoRA fine-tuning for domain a
 
 ---
 
-## 4. Dataset
-
-### 4.1 Source
-
-Statsbomb Open Data (https://github.com/statsbomb/open-data)
-
-* Covers 11 countries
-* Seasons: 2008–2016
-* Includes match results, player stats, and play-by-play events
-* Key tables used: `match`, `player_attributes`, `event_stream` (custom parsed)
-
-### 4.2 Processed Data Format
-
-Source: Extracted directly from the match event JSON file provided by StatsBomb.
-
-Each record contains:
-
-Minute: When the event occurred
-
-Event Type: Action taken (e.g., pass, shot)
-
-Player & Team: Who performed the action
-
-Details: Contextual metadata parsed from sub-objects (pass, shot, foul_committed, etc.)
-
-This format feeds into the LLM prompt generator and enables highly contextual, realistic commentary output.
-
-| Minute | Event Type | Player         | Team          | Details                                                                         |
-| ------ | ---------- | -------------- | ------------- | ------------------------------------------------------------------------------- |
-| 5      | Pass       | Joshua Kimmich | Bayern Munich | Picked out Thomas Müller’s run with a lofted ball behind defense.               |
-| 17     | Shot       | Kai Havertz    | Chelsea       | Unleashed a curling effort from 20 yards that rifled just past the near post.   |
-| 46     | Tackle     | N’Golo Kanté   | Chelsea       | Made a vital sliding interception to halt Bayern’s early second-half surge.     |
-| 78     | Cross      | Leroy Sané     | Bayern Munich | Whipped in an inviting cross from the right flank, met by Lewandowski’s header. |
-
-
-
-### Model & Prompting Strategy
-
-
-
-
-
-
 ## Live Demo
 
 Experience the live commentary simulator in action:
@@ -163,38 +147,9 @@ Experience the live commentary simulator in action:
 👉 **Try it now:**  
 https://bayesian-ml-football-oracle-commentarysimulator.streamlit.app/
 
-
-
-
-
-
-
-
-### meta-llama/Llama-2-7b-chat-hf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 ## 5. Evaluation
-
-### 6.0 Evaluation
 
 The generated commentary was evaluated using both qualitative and manual human judgment techniques.
 
