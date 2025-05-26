@@ -105,7 +105,7 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ## 4. Model Architecture
 
-### 4.1 Weighing Event Importance
+### 4.1 Event Importance
 * Events are weighted based on their significance to match flow and commentary value:
 
 <img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Event%20weights.png?raw=true" alt="Event weights" width="600"/>
