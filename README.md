@@ -6,6 +6,7 @@ Image : Medium blog
 **University of Chicago – MS in Applied Data Science**
 
 **Course:** Bayesian Machine Learning with Generative AI Applications
+
 **Date:** 05/23/2025
 
 ### Contributors:
