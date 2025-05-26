@@ -132,8 +132,6 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 * **GPT-J (6B)**
 * **LLaMA 2 (7B, 13B)**
 
-All models were tested with prompt engineering, and LoRa fine tuning was used on Phi-4.
-
 ---
 
 ## Live Demo
