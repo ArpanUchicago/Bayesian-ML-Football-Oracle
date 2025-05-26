@@ -224,9 +224,15 @@ Below is a summary of the key differences:
 
 ## 8. Limitations & Challenges
 
-* **Hallucinations:** Models sometimes generate incorrect or implausible actions
-* **Latency:** Real-time generation needs fast inference (under 2s window)
-* **Data Noise:** Match event data lacks rich descriptions (e.g., ball movement direction)
+Hallucinations: Can invent or misattribute events.
+
+Latency: Large models may exceed a 2 s response window.
+
+Data Granularity: Event feeds lack detailed context (e.g., trajectory, off-ball movement).
+
+Style Variability: Commentary tone differs by league and audience.
+
+Evaluation Gaps: Automated metrics don’t fully capture “broadcast feel.”
 
 ---
 
