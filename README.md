@@ -115,8 +115,13 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ![Time & context based modifiers](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png)
 
+### 4.3 Event Classification System
+* Events are further categorized by position and type:
+
+![Event subtype](./Event%20subtype.png)
+
 ### 4.3 Goal Classification System
-* Goals are further categorized by position and type to generate more specific and accurate commentary:
+* Goals are also categorized by position and type:
 
 ![Goal subtype](./Goal%20subtype.png)
 
