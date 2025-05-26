@@ -127,12 +127,12 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 
 ### 4.4 Models Explored
 
-* **Mistral-7B (base and LoRA-tuned)**
+* **Phi-4 (base and LoRA-tuned)**
+* **Mistral-7B**
 * **GPT-J (6B)**
-* **Phi-4**
 * **LLaMA 2 (7B, 13B)**
 
-All models were tested with prompt engineering and LoRA fine-tuning for domain adaptation.
+All models were tested with prompt engineering, and LoRa fine tuning was used on Phi-4.
 
 ---
 
