@@ -38,7 +38,7 @@ This project explores the application of open-source LLMs to generate **live-sty
 
 ### 2.2 Key Goals
 
-- **Low-cost fine-tuning** (LoRA/QLoRA) for broadcast-quality commentary on commodity hardware  
+- **Low-cost fine-tuning** (LoRA) for broadcast-quality commentary on commodity hardware  
 - **Plug-and-play framework** for clubs/fan apps to deploy AI narrators
 
 ### 2.3 Core Features
