@@ -146,6 +146,18 @@ Experience the live commentary simulator in action:
 👉 **Try it now:**  
 https://bayesian-ml-football-oracle-commentarysimulator.streamlit.app/
 
+
+
+
+## Live Demo (LoRA Version)
+
+Experience the LoRA-fine-tuned commentary simulator in action:
+
+[![Streamlit Status – LoRA](https://share.streamlit.io/ArpanUchicago/Bayesian-ML-Football-Oracle/main/badge-lora.svg)](https://bayesian-ml-football-oracle-lora.streamlit.app/)
+
+👉 **Try the LoRA version now:**  
+https://bayesian-ml-football-oracle-lora.streamlit.app/
+
 ---
 
 ## 5. Evaluation
