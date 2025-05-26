@@ -113,7 +113,7 @@ This format feeds into the LLM prompt generator and enables highly contextual, r
 ### 4.2 Dynamic Context Adjustments
 * Our commentary adapts based on match time and situational context:
 
-<img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png?raw=true" alt="Time & context modifiers" width="600"/>
+<img src="https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png?raw=true" alt="Time & context modifiers" width="500"/>
 
 ### 4.3 Event Classification System
 * Events are further categorized by position and type:
