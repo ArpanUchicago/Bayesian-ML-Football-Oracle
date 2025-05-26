@@ -32,7 +32,7 @@ This project explores the application of open-source LLMs to generate **live-sty
 
 ### 2.1 Motivation
 
-- **Human commentary** is insightful but limited by availability, cost, language coverage, and potential inconsistency, especially for lower-profile matches.
+- **Human commentary** is insightful but limited by availability, cost, and potential inconsistency, especially for lower-profile matches.
 - **Traditional AI commentary**, like that in FIFA games, relies on fixed templates and rule-based triggers, resulting in repetitive, shallow, and context-insensitive output.
 - **Our model** uses LLMs to generate flexible, real-time commentary that adapts to game context, captures nuance, and scales across languages and match levels.
 
