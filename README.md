@@ -56,12 +56,12 @@ This project explores the application of open-source LLMs to generate **live-sty
 - **Input:** Structured event data (time, player, action, outcome) from the StatsBomb Open Data repository
   
 - **Processing:** Chunk events into short windows, enrich with team/player context
-- 
+  
 - **Modeling:**
-- 
+  
   - **Prompt engineering** with in-context examples  
   - **LoRA fine-tuning** of pre-trained LLMs (Mistral-7B, GPT-J, Phi-4, LLaMA 2)
-  -  
+   
 - **Output:** Natural language, play-by-play commentary in broadcast style
 
 
