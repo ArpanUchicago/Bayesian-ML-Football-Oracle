@@ -27,39 +27,42 @@ Traditional sports commentary is either manually delivered by professionals or g
 This project explores the application of open-source LLMs to generate **live-style, play-by-play soccer commentary** using structured match event data (passes, shots, tackles, etc.). We investigate the capabilities of LLMs like **Mistral-7B**, **GPT-J**, **Phi-4** and **LLaMA 2**, combined with retrieval-based summarization and fine-tuning techniques, to mimic the tone and pacing of real-time human commentators.
 
 ---
+## 2. Project Overview
 
-### 2. Project Overview
+### 2.1 Motivation
 
-Live-Style Soccer Commentary LLM turns structured match events (passes, shots, fouls, goals) into near-real-time, human-like commentary.
+— Traditional commentary is manual or rigidly rule-based, lacking real-time nuance.  
+— Open-source LLMs offer dynamic, context-aware narrative generation.
 
-#Key Goals
+### 2.2 Key Goals
 
-Showcase how lightweight fine-tuning (LoRA/QLoRA) delivers broadcast-ready commentary on commodity hardware
+- **Low-cost fine-tuning** (LoRA/QLoRA) for broadcast-quality commentary on commodity hardware  
+- **Plug-and-play framework** for clubs/fan apps to deploy AI narrators
 
-Offer a plug-and-play framework for clubs or fan apps to launch AI-powered match narrators
+### 2.3 Core Features
 
-#Core Features
+1. **Event Parsing**  
+   Ingests JSON feeds and normalizes timestamps.  
+2. **Prompt Templates**  
+   Injects match context (score, players, phase) for coherent output.  
+3. **Parameter-Efficient Tuning**  
+   Applies LoRA for fine-tuning.  
+4. **Live Simulation**  
+   Streams line-by-line commentary to mimic a real broadcast.
 
-Event Parsing: Ingests JSON/CSV feeds and normalizes timestamps
+### 2.4 Approach Overview
 
-Prompt Templates: Injects context (score, player names, match phase) for coherent, engaging output
+- **Input:** Structured event data (time, player, action, outcome) from the StatsBomb Open Data repository
+  
+- **Processing:** Chunk events into short windows, enrich with team/player context
+- 
+- **Modeling:**
+- 
+  - **Prompt engineering** with in-context examples  
+  - **LoRA fine-tuning** of pre-trained LLMs (Mistral-7B, GPT-J, Phi-4, LLaMA 2)
+  -  
+- **Output:** Natural language, play-by-play commentary in broadcast style
 
-Parameter-Efficient Tuning: Applies LoRA adapters or QLoRA quantization for fast, low-cost fine-tuning
-
-Live Simulation: Streams commentary line-by-line to mimic a real broadcast
-
-
-
-### 2.2 Approach Overview
-
-* **Input:** Structured soccer event data (e.g., player actions, match time, outcomes) from the European Soccer Database.
-* **Processing:** Event sequences are chunked into short temporal windows, enriched with player/team context.
-* **Modeling:** Two modeling strategies are explored:
-
-  * **Prompt Engineering** with in-context examples
-  * **Fine-Tuning** using LoRA on pre-trained LLMs
-
-* **Output:** Natural language commentary resembling broadcast-style narration.
 
 ---
 
