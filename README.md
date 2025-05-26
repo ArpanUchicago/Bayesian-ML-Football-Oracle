@@ -86,14 +86,19 @@ A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smal
    *“A slick one-two between Player X and Y slices through the defense—this is high-quality football!”*
 
 **Weighing Event Importance**
-* Different soccer events are weighted based on their significance to match flow and commentary value:
+* Events are weighted based on their significance to match flow and commentary value:
 
 ![Event weights](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Event%20weights.png)
 
 **Dynamic Context Adjustments**
-* Commentary generation adapts based on match time and situational context:
+* Our commentary adapts based on match time and situational context:
 
 ![Time & context based modifiers](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/main/Time%20%26%20context%20based%20modifiers.png)
+
+**Goal Classification System**
+* Goals are further categorized by position and type to generate more specific and accurate commentary:
+
+![Goal subtype](./Goal%20subtype.png)
 
 ### 3.2 Models Explored
 
