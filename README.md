@@ -138,12 +138,13 @@ Details: Contextual metadata parsed from sub-objects (pass, shot, foul_committed
 
 This format feeds into the LLM prompt generator and enables highly contextual, realistic commentary output.
 
-| Minute | Event Type   | Player             | Team             | Details                                      |
-| ------ | ------------ | ------------------ | ---------------- | -------------------------------------------- |
-| 0      | Pass         | Jonathan Rodríguez | Deportivo Alavés | To Guillermo Maripán, Kick-Off, 29.8m ground |
-| 12     | Shot         | Luis Suárez        | Barcelona        | Goal, Right Foot, xG: 0.34, inside box       |
-| 24     | Foul         | Wakaso             | Deportivo Alavés | Yellow card, late sliding tackle             |
-| 33     | Interception | Jordi Alba         | Barcelona        | Cuts out pass in midfield                    |
+| Minute | Event Type | Player         | Team          | Details                                                                         |
+| ------ | ---------- | -------------- | ------------- | ------------------------------------------------------------------------------- |
+| 5      | Pass       | Joshua Kimmich | Bayern Munich | Picked out Thomas Müller’s run with a lofted ball behind defense.               |
+| 17     | Shot       | Kai Havertz    | Chelsea       | Unleashed a curling effort from 20 yards that rifled just past the near post.   |
+| 46     | Tackle     | N’Golo Kanté   | Chelsea       | Made a vital sliding interception to halt Bayern’s early second-half surge.     |
+| 78     | Cross      | Leroy Sané     | Bayern Munich | Whipped in an inviting cross from the right flank, met by Lewandowski’s header. |
+
 
 
 ### Model & Prompting Strategy
