@@ -164,28 +164,34 @@ https://bayesian-ml-football-oracle-lora.streamlit.app/
 
 The generated commentary was evaluated using both qualitative and manual human judgment techniques.
 
-#### 🔍 Evaluation Criteria:
-- **Relevance**: Commentary correctly reflects the player and event described
-- **Realism**: Output sounds like professional sports broadcasting
-- **Emotion**: Goal commentary is vivid, crowd-driven, and appropriately high-energy
-- **Brevity**: 2–3 sentence limit maintained without sacrificing information
+## Commentary Comparison: Base Phi-4 vs. LoRA-Tuned Phi-4
 
-#### 🧠 Methods Used:
-- **Manual review process**: We conducted systematic human evaluation across 50+ diverse events (pass, goal, foul, interception), with multiple reviewers assessing each output against our criteria
-- **Comparative analysis**: Outputs were compared against real broadcast commentary to identify gaps in authenticity, energy, and professional broadcasting style
+We evaluated two versions of our live commentary model:  
+1. **Base Phi-4** (vanilla)  
+2. **LoRA-Tuned Phi-4**
 
-#### 📊 Observations:
-- The model produced highly realistic commentary for **goals and shots**
-- **Pass and foul events** were often well-executed when player focus was emphasized
-- **Bias toward Messi** was observed when not explicitly overridden in the prompt
-- Commentary length was mostly within range, though longer completions sometimes occurred
-- Crowd reactions improved noticeably when explicitly instructed
+Below is a summary of the key differences:
 
-#### 🔧 Limitations:
-- Lacks full tactical awareness (e.g., game flow, substitutions)
-- Not robust to low-detail events (e.g., simple ball recoveries)
-- Not yet benchmarked with BLEU/ROUGE due to lack of labeled reference commentary
+| Aspect                      | Base Phi-4                                                                                       | LoRA-Tuned Phi-4                                                                            |
+|-----------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Tone & Emphasis**         | Rich narrative prose with few one-word exclamations.                                             | Frequent uppercase, single-word interjections (e.g., **“BRILLIANT!”**, **“INCREDIBLE!”**) for high impact. |
+| **Sentence Structure**      | Highly variable syntax—sometimes long multi-sentence segments, sometimes short.                  | Consistent rapid-fire template per event:  
+``[Minute] <Action> by <Player>! <INTERJECTION>! <Descriptor>``                                    |
+| **Conciseness & Pacing**    | ~24 words per segment on average; multiple overlapping lines per event can slow the flow.       | ~15 words per segment; each event described once, yielding snappier live pacing.             |
+| **Redundancy**              | Repeats similar descriptions of the same play multiple times.                                    | Bundles each event into a single line, eliminating near-duplicates.                         |
+| **Stylistic Flair**         | Flowery metaphors (“thunders a thunderbolt,” “bone-crunching challenge”).                         | Controlled dramatic flourishes reserved for standout moments (“POST!,” “TEXTBOOK!”).        |
+| **Overall Flow**            | Feels like an eager writer looping back on the same action.                                       | Feels like a professional play-by-play feed—steady beat, clear signposts, and high energy.   |
 
+### Takeaways & Recommendations
+
+- **Sharper Delivery**: LoRA fine-tuning streamlines verbosity and standardizes structure for a true live-broadcast feel.  
+- **Energy & Excitement**: Strategic use of uppercase interjections heightens viewer engagement.  
+- **Maintainability**: The template-driven format is easier to tweak (e.g., adjusting interjection lists or segment length).  
+
+> **Next Steps**  
+> - Conduct a listener study to rate perceived excitement and clarity.  
+> - Experiment with adaptive pacing: shorter segments for routine plays, longer for goals.  
+> - Integrate BLEU/ROUGE evaluation against human commentaries for quantitative benchmarking.
 
 ---
 
