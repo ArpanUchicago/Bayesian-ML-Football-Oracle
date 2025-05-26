@@ -78,17 +78,17 @@ Statsbomb Open Data (https://github.com/statsbomb/open-data)
 
 ### 3.2 Processed Data Format
 
-Source: Extracted directly from the match event JSON file provided by StatsBomb.
+* Source: Extracted directly from the match event JSON file provided by StatsBomb.
 
-Each record contains:
+**Each record contains**:
 
-Minute: When the event occurred
+* Minute: When the event occurred
 
-Event Type: Action taken (e.g., pass, shot)
+* Event Type: Action taken (e.g., pass, shot)
 
-Player & Team: Who performed the action
+* Player & Team: Who performed the action
 
-Details: Contextual metadata parsed from sub-objects (pass, shot, foul_committed, etc.)
+* Details: Contextual metadata parsed from sub-objects (pass, shot, foul_committed, etc.)
 
 This format feeds into the LLM prompt generator and enables highly contextual, realistic commentary output.
 
