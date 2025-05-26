@@ -28,26 +28,25 @@ This project explores the application of open-source LLMs to generate **live-sty
 
 ---
 
-## 2. Project Overview
+### 2. Project Overview
 
-Live-Style Soccer Commentary LLM generates near-real-time, human-like match commentary based on structured event feeds (passes, shots, fouls, goals, etc.).
+Live-Style Soccer Commentary LLM turns structured match events (passes, shots, fouls, goals) into near-real-time, human-like commentary.
 
-**Goals**:
+#Key Goals
 
-* Demonstrate how parameter-efficient fine-tuning (LoRA/QLoRA) can produce engaging commentary on commodity hardware.
-* Provide a template for small clubs or fan-driven applications to deploy AI commentators.
+Showcase how lightweight fine-tuning (LoRA/QLoRA) delivers broadcast-ready commentary on commodity hardware
 
-**Features**:
+Offer a plug-and-play framework for clubs or fan apps to launch AI-powered match narrators
 
-* Parses raw event data from CSV/JSON feeds
-* Applies custom prompt templates to steer LLM output
-* Supports LoRa fine-tuning
+#Core Features
 
-**Prerequisites**:
+Event Parsing: Ingests JSON/CSV feeds and normalizes timestamps
 
-* Python 3.9+
-* Git
-* A GPU with ≥16 GB VRAM (for models ≥1 B parameters) or CPU-only for smaller models
+Prompt Templates: Injects context (score, player names, match phase) for coherent, engaging output
+
+Parameter-Efficient Tuning: Applies LoRA adapters or QLoRA quantization for fast, low-cost fine-tuning
+
+Live Simulation: Streams commentary line-by-line to mimic a real broadcast
 
 
 
