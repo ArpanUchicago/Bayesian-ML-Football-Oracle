@@ -1,9 +1,4 @@
-MATCH COMMENTARY: Bayer Leverkusen vs Werder Bremen
-Competition: 1. Bundesliga
-Date: 2024-04-14
-================================================================================
-
-Welcome to this 1. Bundesliga encounter between Bayer Leverkusen and Werder Bremen! We're live from the stadium for what promises to be an exciting match!
+Welcome to Bundesliga encounter between Bayer Leverkusen and Werder Bremen! We're live from the stadium for what promises to be an exciting match!
 
 [5'] Straight from kickoff, Infringement by Edmond Fayçal Tapsoba! The Bayer Leverkusen player steps outside the boundaries of fair play!
 
