@@ -182,11 +182,14 @@ Below is a summary of the key differences:
 
 ### Takeaways & Recommendations
 
+
 - **Sharper Delivery**: LoRA fine-tuning streamlines verbosity and standardizes structure for a true live-broadcast feel.  
 - **Energy & Excitement**: Strategic use of uppercase interjections heightens viewer engagement.  
 - **Maintainability**: The template-driven format is easier to tweak (e.g., adjusting interjection lists or segment length).  
 
-> **Next Steps**  
+
+> **Next Steps**
+>  
 > - Conduct a listener study to rate perceived excitement and clarity.  
 > - Experiment with adaptive pacing: shorter segments for routine plays, longer for goals.  
 > - Integrate BLEU/ROUGE evaluation against human commentaries for quantitative benchmarking.
@@ -238,7 +241,7 @@ Below is a summary of the key differences:
 * Prompt engineering is competitive with fine-tuning in smaller setups
 * Human-AI hybrid workflows (AI draft + human edit) show promise
 
-**Next Steps:**
+### Thank you.
 
 * Integrate **speaker-style transfer** using **Retrieval-Augmented Generation (RAG)** (e.g. mimic Peter Drury)
 * Use multi-modal input (text + images/heatmaps)
