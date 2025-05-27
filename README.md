@@ -220,15 +220,15 @@ Below is a summary of the key differences:
 
 ## 8. Limitations & Challenges
 
-Hallucinations: Can invent or misattribute events.
+**Hallucinations**: Can invent or misattribute events.
 
-Latency: Large models may exceed a 2 s response window.
+**Latency**: Large models may exceed a 2 s response window.
 
-Data Granularity: Event feeds lack detailed context (e.g., trajectory, off-ball movement).
+**Data Granularity**: Event feeds lack detailed context (e.g., trajectory, off-ball movement).
 
-Style Variability: Commentary tone differs by league and audience.
+**Style Variability**: Commentary tone differs by league and audience.
 
-Evaluation Gaps: Automated metrics don’t fully capture “broadcast feel.”
+**Evaluation Gaps**: Automated metrics don’t fully capture “broadcast feel.”
 
 ---
 
