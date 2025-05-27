@@ -241,9 +241,11 @@ Below is a summary of the key differences:
 * Prompt engineering is competitive with fine-tuning in smaller setups
 * Human-AI hybrid workflows (AI draft + human edit) show promise
 
-### Thank you.
 
 * Integrate **speaker-style transfer** using **Retrieval-Augmented Generation (RAG)** (e.g. mimic Peter Drury)
 * Use multi-modal input (text + images/heatmaps)
 * Evaluate in live setting with simulated match feeds
 * Deploy in a web app dashboard with real-time updates
+
+
+### Thank you.
