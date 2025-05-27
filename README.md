@@ -23,7 +23,7 @@ Image : Medium blog
 ![Match LLM](https://github.com/ArpanUchicago/Bayesian-ML-Football-Oracle/blob/d9cd93fbc863690588acdaec87016a43dc69c23b/ChatGPT.png?raw=true)
 Image: ChatGPT generated 
 
-Traditional sports commentary is either manually delivered by professionals or generated through rigid rule-based systems. These approaches often lack flexibility, contextual nuance, and real-time adaptability. In contrast, recent advances in large language models (LLMs) have enabled more dynamic generation of coherent, engaging narratives based on structured data inputs.
+Traditional sports commentary is either manually delivered by professionals or generated through rigid rule-based systems. These approaches often lack flexibility, contextual nuance, real-time adaptability, and scalability. Live coverage typically requires at least one commentator at every match, which makes it resource-intensive and hard to scale. Our approach uses structured data feeds to produce commentary for thousands of games at once. Recent advances in large language models (LLMs) have made it possible to generate coherent and engaging narratives directly from structured inputs.
 
 This project explores the application of open-source LLMs to generate **live-style, play-by-play soccer commentary** using structured match event data (passes, shots, tackles, etc.). We investigate the capabilities of LLMs like **Mistral-7B**, **GPT-J**, **Phi-4** and **LLaMA 2**, combined with retrieval-based summarization and fine-tuning techniques, to mimic the tone and pacing of real-time human commentators.
 
