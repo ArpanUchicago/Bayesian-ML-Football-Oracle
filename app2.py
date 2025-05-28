@@ -3,8 +3,12 @@ import time
 
 st.title("Live Commentary Simulator")
 
-# Sidebar control for delay
+# Sidebar controls
 delay = st.sidebar.slider("Delay (sec)", 1, 10, 5)
+font_size = st.sidebar.slider("Font size (px)", 36, 96, 48)  # Increased range, default 48px
+text_color = st.sidebar.color_picker("Text color", "#FFFFFF")        # Default white for visibility
+bg_color = st.sidebar.color_picker("Background color", "#00008B")    # Default dark blue
+text_opacity = st.sidebar.slider("Text opacity (%)", 50, 100, 100)
 
 # Placeholder for the commentary text
 placeholder = st.empty()
@@ -15,20 +19,21 @@ with open('Phi-4 LoRa_commentary.txt', 'r', encoding='utf-8') as f:
 
 if st.button("Start"):
     for c in comments:
-        # Wrap in a styled <div> via HTML
         styled = f"""
-          <div style="
-            font-size: 24px;    /* adjust px size as you like */
-            color: #0066CC;     /* any hex, name, or rgb() value */
+        <div style="
+            font-size: {font_size}px;
+            color: {text_color};
+            opacity: {text_opacity/100};
             font-family: Arial, sans-serif;
-            padding: 10px;
-            background-color: #F0F8FF; /* optional highlight */
+            padding: 14px;
+            background-color: {bg_color};
             border-radius: 8px;
-          ">
+            margin-bottom: 10px;
+        ">
             {c}
-          </div>
+        </div>
         """
-        # Render HTML with unsafe_allow_html=True
         placeholder.markdown(styled, unsafe_allow_html=True)
         time.sleep(delay)
     st.balloons()
+
