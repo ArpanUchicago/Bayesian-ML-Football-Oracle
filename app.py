@@ -5,10 +5,11 @@ st.title("Live Commentary Simulator")
 
 # Sidebar controls
 delay = st.sidebar.slider("Delay (sec)", 1, 10, 5)
-font_size = st.sidebar.slider("Font size (px)", 24, 60, 36)
-text_color = st.sidebar.color_picker("Text color", "#FF4500")        # default: orange-red
-bg_color = st.sidebar.color_picker("Background color", "#000000")    # default: black
-text_opacity = st.sidebar.slider("Text opacity (%)", 50, 100, 90)    # optional
+font_size = st.sidebar.slider("Font size (px)", 36, 96, 48)  # Increased range, default 48px
+text_color = st.sidebar.color_picker("Text color", "#FFFFFF")        # Default white for visibility
+bg_color = st.sidebar.color_picker("Background color", "#00008B")    # Default dark blue
+text_opacity = st.sidebar.slider("Text opacity (%)", 50, 100, 100)
+
 
 # Placeholder for the commentary text
 placeholder = st.empty()
@@ -25,10 +26,10 @@ if st.button("Start"):
             color: {text_color};
             opacity: {text_opacity/100};
             font-family: Arial, sans-serif;
-            padding: 12px;
+            padding: 14px;
             background-color: {bg_color};
-            border-radius: 6px;
-            margin-bottom: 8px;
+            border-radius: 8px;
+            margin-bottom: 10px;
         ">
             {c}
         </div>
